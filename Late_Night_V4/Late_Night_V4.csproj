@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3401415-3A48-48D2-8253-88FDC3B906C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Late_Night_V4</RootNamespace>
+    <AssemblyName>Late_Night_V4</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass" />
+    <Reference Include="DataModel" />
+    <Reference Include="Il2Cppmscorlib" />
+    <Reference Include="MelonLoader" />
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="Photon-DotNet" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Transmtn" />
+    <Reference Include="UnhollowerBaseLib" />
+    <Reference Include="Unity.Postprocessing.Runtime" />
+    <Reference Include="Unity.TextMeshPro" />
+    <Reference Include="UnityEngine.AnimationModule" />
+    <Reference Include="UnityEngine.AssetBundleModule" />
+    <Reference Include="UnityEngine.AudioModule" />
+    <Reference Include="UnityEngine.ClothModule" />
+    <Reference Include="UnityEngine.CoreModule" />
+    <Reference Include="UnityEngine.Il2CppImageConversionManager" />
+    <Reference Include="UnityEngine.InputLegacyModule" />
+    <Reference Include="UnityEngine.ParticleSystemModule" />
+    <Reference Include="UnityEngine.PhysicsModule" />
+    <Reference Include="UnityEngine.TextRenderingModule" />
+    <Reference Include="UnityEngine.UI" />
+    <Reference Include="UnityEngine.UnityWebRequestModule" />
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule" />
+    <Reference Include="UnityEngine.VRModule" />
+    <Reference Include="UnityEngine.XRModule" />
+    <Reference Include="VRC.Udon" />
+    <Reference Include="VRC.Udon.Common" />
+    <Reference Include="VRC.UI.Core" />
+    <Reference Include="VRC.UI.Elements" />
+    <Reference Include="VRCCore-Editor" />
+    <Reference Include="VRCCore-Standalone" />
+    <Reference Include="VRCSDK2" />
+    <Reference Include="VRCSDK3" />
+    <Reference Include="VRCSDK3A" />
+    <Reference Include="VRCSDKBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DayClientML2\Utility\Extensions\MiskExtension.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\ModerationManagerExtension.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\NotificationManagerExtension.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\PhotonExtensions.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\PhotonStream.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\PlayerExtensions.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\PlayerManagerExtension.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\PopupManager.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\RoomManagerExtension.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\Serialization.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\Utils.cs" />
+    <Compile Include="DayClientML2\Utility\Extensions\VRCUiManagerExtension.cs" />
+    <Compile Include="DayClientML2\Utility\MenuApi\MenuArrow.cs" />
+    <Compile Include="DayClientML2\Utility\MenuApi\VRCList.cs" />
+    <Compile Include="DayClientML2\Utility\MenuApi\VRCMenuText.cs" />
+    <Compile Include="DayClientML2\Utility\MenuButton.cs" />
+    <Compile Include="DayClientML2\Utility\MenuButtonType.cs" />
+    <Compile Include="DayClientML2\Utility\MenuCheckbox.cs" />
+    <Compile Include="DayClientML2\Utility\MenuContent.cs" />
+    <Compile Include="DayClientML2\Utility\MenuSlider.cs" />
+    <Compile Include="DayClientML2\Utility\MenuText.cs" />
+    <Compile Include="DayClientML2\Utility\MenuType.cs" />
+    <Compile Include="DayClientML2\Utility\Menu\MenuApi\HudText.cs" />
+    <Compile Include="DayClientML2\Utility\Menu\UnityUIUtils.cs" />
+    <Compile Include="DayClientML2\Utility\QuickMenuContent.cs" />
+    <Compile Include="DayClientML2\Utility\VRChatObjects.cs" />
+    <Compile Include="External_Libraries\popups\Popups.cs" />
+    <Compile Include="External_Libraries\SkidHubAPI\Functions.cs" />
+    <Compile Include="External_Libraries\SkidHubAPI\NetworkingObject.cs" />
+    <Compile Include="External_Libraries\SkidHubAPI\SkidHubLogInAPI.cs" />
+    <Compile Include="gPatch.cs" />
+    <Compile Include="IL2CPPAssetBundleAPI\IL2CPPAssetBundle.cs" />
+    <Compile Include="Late_Night_config\Config.cs" />
+    <Compile Include="Late_Night_config_Firends_backUp\Config_Firends_backUp.cs" />
+    <Compile Include="Late_Night_V2_lewd\Lewd.cs" />
+    <Compile Include="Late_Night_V2_LoadSprite\LoadSprite.cs" />
+    <Compile Include="Late_Night_V2_Move_vrc_ui\Move_vrc_ui.cs" />
+    <Compile Include="Late_Night_V2_Playerlist\Playerlist.cs" />
+    <Compile Include="Late_Night_V2_popshit\popshit.cs" />
+    <Compile Include="Late_Night_V2_ui_difine\ui_difine.cs" />
+    <Compile Include="Late_Night_V2_wrappers\PlayerWrapper.cs" />
+    <Compile Include="Late_Night_V2_wrappers\Wrapper.cs" />
+    <Compile Include="Late_Night_V3\Late_Night.cs" />
+    <Compile Include="Late_Night_V3\Modules_BugMenuShit\BugMenuShit.cs" />
+    <Compile Include="Late_Night_V3\Modules_Funny\Funny.cs" />
+    <Compile Include="Late_Night_V3\Modules_Movement\Movement.cs" />
+    <Compile Include="Late_Night_V3\Modules_Player\Player.cs" />
+    <Compile Include="Late_Night_V3\Modules_QOL\QOL.cs" />
+    <Compile Include="Late_Night_V3\Modules_Safety\Safety.cs" />
+    <Compile Include="Late_Night_V3\Modules_Settings\Settings.cs" />
+    <Compile Include="Late_Night_V3\Modules_UserUtils\UserUtils.cs" />
+    <Compile Include="Late_Night_V3\Modules_Wolds\PortalToInstByID.cs" />
+    <Compile Include="Late_Night_V3\Modules_Wolds\Wolds.cs" />
+    <Compile Include="Late_Night_V3\Patches.cs" />
+    <Compile Include="Late_Night_V3_Anitcrash\Anitcrash.cs" />
+    <Compile Include="Late_Night_V3_Art\Art.cs" />
+    <Compile Include="Late_Night_V3_AvatarObject\AvatarObject.cs" />
+    <Compile Include="Late_Night_V3_AvatarObject\serverAvatarObject.cs" />
+    <Compile Include="Late_Night_V3_AviFave\AviFave.cs" />
+    <Compile Include="Late_Night_V3_BigMenuBeh\BigMenuBeh.cs" />
+    <Compile Include="Late_Night_V3_colnsole\LNCcolnsole.cs" />
+    <Compile Include="Late_Night_V3_Config_AVI_FAVE\Config_AVI_FAVE.cs" />
+    <Compile Include="Late_Night_V3_Config_Seen_AVIS\Config_Seen_AVIS.cs" />
+    <Compile Include="Late_Night_V3_Config_World_Histoy\Config_World_Histoy.cs" />
+    <Compile Include="Late_Night_V3_Enderpearl\Enderpearl.cs" />
+    <Compile Include="Late_Night_V3_GlobalDynamicBones\GlobalDynamicBones.cs" />
+    <Compile Include="Late_Night_V3_MediaControl\MediaControl.cs" />
+    <Compile Include="Late_Night_V3_NamePlate\NamePlate.cs" />
+    <Compile Include="Late_Night_V3_PickUpBoom\PickUpBoom.cs" />
+    <Compile Include="Late_Night_V3_PlayerObjects\PLayerObjects.cs" />
+    <Compile Include="Late_Night_V3_PlayerObjects\WomenObject.cs" />
+    <Compile Include="Late_Night_V3_PlayerSel\PlayerSel.cs" />
+    <Compile Include="Late_Night_V3_QmFreeze\QmFreeze.cs" />
+    <Compile Include="Late_Night_V3_StarLag\Serialization.cs" />
+    <Compile Include="Late_Night_V3_StarLag\StarLag.cs" />
+    <Compile Include="Late_Night_V3_stayoffnigga\stayoffnigga.cs" />
+    <Compile Include="Late_Night_V3_Test69\Test69.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\Amungus.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\ClubB.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\FBT.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\Ghostgame.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\Hparty.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\jarUtils.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\MIdNight.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\murder.cs" />
+    <Compile Include="Late_Night_V3_WorldGameHacks\WorldGameHacks.cs" />
+    <Compile Include="Late_Night_V3_WorldObjects\WorldObjects.cs" />
+    <Compile Include="Move\MoveMentV2.cs" />
+    <Compile Include="ProjectXoX\Utility\ActionListenerLNC_.cs" />
+    <Compile Include="ProjectXoX\Utility\ButtonAPI\IButtonPage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="XButtonAPI\ButtonExtension.cs" />
+    <Compile Include="XButtonAPI\QMButtonBase.cs" />
+    <Compile Include="XButtonAPI\QMCategory.cs" />
+    <Compile Include="XButtonAPI\QMCategoryPage.cs" />
+    <Compile Include="XButtonAPI\QMContainer.cs" />
+    <Compile Include="XButtonAPI\QMEmptyButton.cs" />
+    <Compile Include="XButtonAPI\QMEmptyWing.cs" />
+    <Compile Include="XButtonAPI\QMHeader.cs" />
+    <Compile Include="XButtonAPI\QMLabel.cs" />
+    <Compile Include="XButtonAPI\QMNestedButton.cs" />
+    <Compile Include="XButtonAPI\QMNestedWing.cs" />
+    <Compile Include="XButtonAPI\QMSingleButton.cs" />
+    <Compile Include="XButtonAPI\QMSingleToggleButton.cs" />
+    <Compile Include="XButtonAPI\QMSingleWing.cs" />
+    <Compile Include="XButtonAPI\QMSlider.cs" />
+    <Compile Include="XButtonAPI\QMStuff.cs" />
+    <Compile Include="XButtonAPI\QMTabMenu.cs" />
+    <Compile Include="XButtonAPI\QMToggleButton.cs" />
+    <Compile Include="XButtonAPI\QMToggleWing.cs" />
+    <Compile Include="XButtonAPI\QMWingBase.cs" />
+    <Compile Include="XButtonAPI\XButtonAPI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Late_Night_V4.FilesShit.Mirror.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
